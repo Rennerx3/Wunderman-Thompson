@@ -1,7 +1,7 @@
 /*Reset styles*/
 
 html{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body{
@@ -215,11 +215,11 @@ header{
 }
 
 .icons div div{
-  height: 55px;
-  width: 60px;
+  height: 80px;
+  width: 85px;
   position: absolute;
-  top: -2px;
-  left: 5px;
+  top: -13px;
+  left: -9px;
   background-color: #554F95;
   border-radius: 7px;
   z-index: -1;
@@ -233,9 +233,9 @@ header{
 }
 
 .icons div > *{
-  width: 61px;
-  height: 61px;
-  font-size: 61px;
+  width: 90px;
+  height: 90px;
+  font-size: 90px;
   cursor: pointer;
 }
 
@@ -271,4 +271,98 @@ header{
 
 .pointers button:last-of-type > img{
   transform: rotate(180deg);
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 1300px){
+  .text{
+    width: 80%;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .image{
+    width: 40%;
+    height: 100%;
+  }
+  .icons{
+    transform: scale(.6);
+  }
+}
+
+@media screen and (max-width: 950px){
+  .sub-featured{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .punctuation{
+    top: 16%;
+  }
+
+  .text{
+    display: none;
+  }
+
+  header{
+    padding: 0 20px;
+  }
+
+  .right{
+    padding: 0 35px;
+  }
+  
+  .right ul{
+    display: none;
+  }
+
+  .right > svg{
+    cursor: pointer;
+    width: 85px;
+    height: 100%;
+  }
+  
+  .image{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 30px;
+  }
+
+  .image img{
+    height: 65%;
+    width: 100%;
+  }
+
+  .image h1{
+    height: 10%;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+  }
+
+  .text-icons{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+    transform: scale(1.3);
+  }
+
+  .pointers{
+    height: 60%;
+    margin-bottom: 140px;
+  }
+
+  .pointers button > img {
+    width: 60px;
+    height: 40px;
+  }
 }
