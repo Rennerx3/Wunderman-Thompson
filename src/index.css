@@ -1,68 +1,274 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/*Reset styles*/
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+  overflow-x: hidden;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+body{
+  padding: 0;
   margin: 0;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+/*Header*/
+
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #1c1c1c83;
+  padding: 0 71px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-size: 18px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.left img{
+  height: 80%;
+}
+
+.right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding-right: 71px;
+}
+
+.right ul{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding-right: 71px;
+}
+
+.right ul li{
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin-left: 24px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.right ul li:first-of-type{
+  font-weight: bold;
+}
+
+.right ul li:first-of-type:hover, .right ul li:nth-child(2):hover{
+  opacity: .8;
+}
+
+.right ul li:nth-child(2){
+  font-weight: lighter;
+}
+
+.right ul li:last-of-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 182px;
+  height: 45px;
+  background-color: #554F95;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.right ul li:last-of-type:hover{
+  background-color: #5048a2;
+}
+
+/*Carrusel*/
+
+.featured{
+  background-image: url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/john-wick-4-2869783.jpg?tf=3840x);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+
+.sub-featured{
+  position: relative;
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image{
+  width: 30%;
+  position: relative;
+  z-index: 3;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+}
+
+.punctuation{
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background-color: #554F95;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 69px;
+  height: 59px;
+  border-radius: 6px;
+}
+
+.punctuation p, .punctuation span{
+  color: white;
+  font-size: 12px;
+}
+
+.pointers{
+  position: absolute;
+}
+
+.text-icons{
+  position: relative;
+  width: 70%;
+  height: 100%;
+}
+
+.text{
+  position: relative;
+  top: 30px;
+  left: -20px;
+  width: 90%;
+  height: auto;
+  background-color: #d9d9d993;
+  padding: 20px 52px;
+  border-top: 5px solid #554F95;
+  border-bottom: 5px solid #554F95;
+  border-right: 5px solid #554F95;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.text h1{
+  font-size: 69px;
+  font-weight:normal;
+  margin: 0;
+}
+
+.text hr{
+  margin-right: 40%;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.text p{
+  font-size: 18px;
+}
+
+.icons{
+  position:relative;
+  top: 10%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(.7);
+  z-index: 10000;
+}
+
+.icons div{
+  height: 100px;
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons div:first-of-type{
+  margin-right: 40px;
+}
+
+.icons div div{
+  height: 55px;
+  width: 60px;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  background-color: #554F95;
+  border-radius: 7px;
+  z-index: -1;
+}
+
+.icons div p{
+  width: auto;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.icons div > *{
+  width: 61px;
+  height: 61px;
+  font-size: 61px;
+  cursor: pointer;
+}
+
+.icons div > *:hover{
+  opacity: .7;
+}
+
+
+.pointers{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120%;
+  height: 100%;
+  color: black;
+}
+
+.pointers button{
+  background-color: transparent;
+  border: none;
+}
+
+.pointers button > img {
+  width: 90px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.pointers button > img:hover{
+  opacity: .7;
+}
+
+.pointers button:last-of-type > img{
+  transform: rotate(180deg);
 }
