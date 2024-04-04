@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTicket } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [renderIcon, setRenderIcon] = useState(false);
@@ -31,9 +32,9 @@ const Header = () => {
             </div>
             <nav className="right">
                 <ul>
-                    <li>Destacadas</li>
-                    <li>Cartelera</li>
-                    <li>Comprar Ticket</li>
+                    <Link><li>Destacadas</li></Link>
+                    <Link><li>Cartelera</li></Link>
+                    <Link to='/ticket'><li>Comprar Ticket</li></Link>
                 </ul>
                 {renderIcon && <>
                     <div style={{height: '50px',width: '75px',  position: 'absolute', backgroundColor: '#554F95', borderRadius: '6px', top: '11px', right: '59px', zIndex: '-1'}}></div>

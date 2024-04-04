@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "lenguage": "ES",
         "name": "John Wick 4",
         "poster_img": "https://m.media-amazon.com/images/S/pv-target-images/6d3d1461d50778271845ce7ec81ba2c5d76a20f7f84e5061cd099aabaedc77f9.jpg",
         "sinopsis": "John Wick 4 comienza con el personaje del título (Keanu Reeves) huyendo de nuevo mientras tiene a cientos de asesinos pisándole los talones. El villano principal de la serie es el Marqués de Gramont (Bill Skarsgård), un líder de la Alta Mesa que sigue aumentando la recompensa por la cabeza de Wick mientras también arregla algunos asuntos dentro de la organización, incluyendo la posible eliminación de Winston Scott (Ian McShane) y algunas de las decisiones que tomó en el pasado.",
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "lenguage": "ES",
         "name": "The Dark Knight",
         "poster_img": "https://m.media-amazon.com/images/S/pv-target-images/e9a43e647b2ca70e75a3c0af046c4dfdcd712380889779cbdc2c57d94ab63902.jpg",
         "sinopsis": "The Dark Knight sigue al caballero oscuro de Gotham City, Batman, mientras lucha contra el caos desatado por el psicótico Joker. Con la ayuda del fiscal de distrito Harvey Dent y el teniente Jim Gordon, Batman se embarca en una misión para erradicar el crimen organizado en la ciudad. Sin embargo, el Joker pone en marcha una serie de atroces crímenes que desafían la moralidad de Batman y lo llevan al borde de sus límites físicos y emocionales. En medio del caos, Batman debe tomar decisiones difíciles para salvar Gotham City y proteger a sus ciudadanos de la anarquía del Joker.",
@@ -17,6 +19,7 @@
     },
     {
         "id": 3,
+        "lenguage": "EN",
         "name": "Inception",
         "poster_img": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7825626_p_v8_af.jpg",
         "sinopsis": "Inception sigue a Dom Cobb, un ladrón experto en el arte de la extracción, que roba secretos valiosos del subconsciente de las personas mientras están en un estado de sueño. Cobb es contratado para realizar una tarea casi imposible: implantar una idea en la mente de alguien a través del proceso de 'inserción'. Para lograr esto, Cobb reúne a un equipo talentoso y emprende una peligrosa misión que lo lleva a través de diferentes niveles de sueño y realidades distorsionadas. Sin embargo, a medida que la línea entre la realidad y la fantasía se desdibuja, Cobb se enfrenta a sus propios demonios internos y lucha por mantenerse firme en su búsqueda de redención y reconciliación con su pasado.",
@@ -25,6 +28,7 @@
     },
     {
         "id": 4,
+        "lenguage": "ES",
         "name": "Interstellar",
         "poster_img": "https://m.media-amazon.com/images/I/91vIHsL-zjL._AC_UF894,1000_QL80_.jpg",
         "sinopsis": "Interstellar sigue la historia de un grupo de exploradores que se aventuran en un viaje interestelar en busca de un nuevo hogar para la humanidad, ya que la Tierra enfrenta una crisis ambiental devastadora. La película explora temas de amor, sacrificio y la naturaleza del tiempo y el espacio a medida que los protagonistas se embarcan en un viaje épico a través de agujeros de gusano y dimensiones desconocidas. A lo largo de su odisea, se enfrentan a desafíos extremos y descubren secretos que desafían su comprensión del universo. Interstellar ofrece una experiencia cinematográfica emocionante y reflexiva que deja una impresión duradera en el espectador.",
@@ -33,6 +37,7 @@
     },
     {
         "id": 5,
+        "lenguage": "EN",
         "name": "The Shawshank Redemption",
         "poster_img": "https://m.media-amazon.com/images/I/815qtzaP9iL._AC_UF894,1000_QL80_.jpg",
         "sinopsis": "The Shawshank Redemption cuenta la historia de Andy Dufresne, un banquero condenado por un crimen que no cometió y enviado a la penitenciaría de Shawshank. La película sigue su lucha por la supervivencia y la redención en un ambiente brutal y opresivo. A lo largo de los años, Andy establece amistades improbables, desafía la corrupción institucional y mantiene viva su esperanza de libertad. La película explora temas de amistad, esperanza, perseverancia y la capacidad del espíritu humano para encontrar la redención incluso en las circunstancias más oscuras.",
@@ -41,6 +46,7 @@
     },
     {
         "id": 6,
+        "lenguage": "ES",
         "name": "The Matrix",
         "poster_img": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
         "sinopsis": "The Matrix sigue a Neo, un programador de computadoras que descubre la verdad sobre su realidad aparentemente normal: el mundo que conoce es una simulación de realidad virtual creada por máquinas inteligentes. Neo se une a un grupo de rebeldes que luchan contra las máquinas y despiertan a otros humanos de la ilusión en la que viven. A medida que Neo aprende sobre sus habilidades especiales dentro de la Matrix, se convierte en el héroe destinado a liderar a la humanidad hacia la libertad.",
@@ -49,6 +55,7 @@
     },
     {
         "id": 7,
+        "lenguage": "EN",
         "name": "The Godfather",
         "poster_img": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
         "sinopsis": "The Godfather sigue la historia de la familia Corleone, una de las más poderosas y respetadas de la mafia italiana en Nueva York. Don Vito Corleone, el patriarca, lidera con mano firme su imperio criminal, manteniendo un equilibrio entre la violencia y la diplomacia. Sin embargo, cuando se ve amenazado por otras familias rivales y por conflictos internos, la lealtad y la traición se entrelazan en una lucha por el poder y la supervivencia.",
@@ -57,6 +64,7 @@
     },
     {
         "id": 8,
+        "lenguage": "ES",
         "name": "Pulp Fiction",
         "poster_img": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         "sinopsis": "Pulp Fiction es una película que sigue múltiples historias entrelazadas, todas relacionadas con el crimen y la violencia en Los Ángeles. Desde un par de asesinos a sueldo hasta un boxeador que se ve envuelto en problemas con un jefe de la mafia, cada personaje tiene su propia narrativa que se entrecruza de maneras inesperadas. Con diálogos ingeniosos, personajes memorables y una narrativa no lineal, Pulp Fiction se ha convertido en un clásico del cine moderno.",
@@ -65,6 +73,7 @@
     },
     {
         "id": 9,
+        "lenguage": "ES",
         "name": "Forrest Gump",
         "poster_img": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
         "sinopsis": "Forrest Gump cuenta la historia de un hombre con discapacidad intelectual que, a pesar de sus limitaciones, vive una vida extraordinaria llena de aventuras y encuentros con figuras históricas importantes. Desde su infancia hasta su vida adulta, Forrest atraviesa décadas de acontecimientos históricos mientras persigue a su amor de toda la vida, Jenny. La película es una conmovedora exploración de la vida, el amor, la amistad y el destino.",
@@ -73,6 +82,7 @@
     },
     {
         "id": 10,
+        "lenguage": "ES",
         "name": "Fight Club",
         "poster_img": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         "sinopsis": "Fight Club sigue la historia de un hombre sin nombre que lucha contra el aburrimiento y la insatisfacción de su vida moderna. Después de conocer a un carismático vendedor de jabón llamado Tyler Durden, el protagonista se embarca en una espiral descendente de desafío a la sociedad y autoexploración a través de peleas clandestinas. La película explora temas de masculinidad, materialismo y nihilismo en un viaje visualmente impactante y filosóficamente provocativo.",
