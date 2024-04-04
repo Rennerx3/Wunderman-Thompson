@@ -2,8 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faTicket } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 
-const Featured = () => {
+const Featured = ({data}) => {
     const [renderTitle, setRenderTitle] = useState(false);
+    const [loader, setLoader] = useState(true);
+
+    const firstThreeMovies = data.slice(0,3);
+    console.log(firstThreeMovies);
 
     useEffect(() => {
         const handleWidth = () => {
