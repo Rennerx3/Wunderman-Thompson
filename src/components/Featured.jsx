@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faTicket } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Featured = ({data}) => {
     const [renderTitle, setRenderTitle] = useState(false);
@@ -51,7 +52,7 @@ const Featured = ({data}) => {
                         (<div key={el.id} className={currentIndex === index ? 'main-div active' : 'main-div'}>
                             <div className="image">
                                 <div className="punctuation">
-                                    <FontAwesomeIcon icon={faStar} style={{color: "#ffffff", height: '17px', width: '17px'}} />
+                                    <FontAwesomeIcon icon={faStar} style={{color: "#ffffff"}} />
                                     <span><strong style={{fontSize: '18px'}}>{el.punctuation}</strong>/10</span>
                                     <p style={{margin: '0', fontWeight: 'bold'}}>IMDB</p>
                                 </div>
@@ -68,12 +69,14 @@ const Featured = ({data}) => {
                                     <div>
                                         <div></div>
                                         <i className="fa-brands fa-square-youtube" style={{color: "#ffffff"}}></i>
-                                        <p>Ver trailer</p>
+                                        <a href={el.trailer} target="_blank" rel="noopener noreferrer"><p>Ver trailer</p></a>
                                     </div>
                                     <div>
-                                        <div style={{height: '60px',width: '85px',  position: 'absolute', backgroundColor: '#554F95', borderRadius: '6px', top: '-4px', left: '13px', zIndex: '-1'}}></div>
+                                        <div style={{height: '60px',width: '85px',  position: 'absolute', backgroundColor: '#554F95', borderRadius: '15px', top: '-3%', left: '10%', zIndex: '-1', margin: '0'}}></div>
                                         <FontAwesomeIcon icon={faTicket} style={{color: "#ffffff"}} />
-                                        <p>Comprar ticket</p>
+                                        <Link to='/ticket'>
+                                            <p style={{width:'160%'}}>Comprar ticket</p>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -81,12 +84,14 @@ const Featured = ({data}) => {
                     ))
                     }
                     <div className="pointers">
-                        <button onClick={() => handlePrev()}>
+                        {currentIndex === 0 ? '' : <button onClick={() => handlePrev()} style={currentIndex === 2 ? {transform: 'rotate(180deg)'} : {}}>
+                            <img src="../../public/arrow.png" alt=""/>
+                        </button>}
+                        {
+                            currentIndex === 2 ? '' : <button onClick={() => handleNext()} style={currentIndex === 0 ? {position:'absolute',right: '0%'} : {}}>
                             <img src="../../public/arrow.png" alt="" />
                         </button>
-                        <button onClick={() => handleNext()}>
-                            <img src="../../public/arrow.png" alt="" />
-                        </button>
+                        }
                     </div>
                 </div>
             </div>

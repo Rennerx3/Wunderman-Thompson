@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-let firstFiveMovies,
-    secondFiveMovies
 
 const Billboard = ({data}) => {
     const [loader, setLoader] = useState(true);
+    const [firstFiveMovies, setFirstFiveMovies] = useState([]);
+    const [secondFiveMovies, setSecondFiveMovies] = useState([]);
 
     useEffect(() => {
         
         if(data && data.length > 0){
-        firstFiveMovies = data.slice(0,5);
-        secondFiveMovies = data.slice(5);
+            setFirstFiveMovies(data.slice(0,5));
+            setSecondFiveMovies(data.slice(5));
             setLoader(false);
         }
-    })
+    },[data])
 
     return ( 
         <main className="billboard">
+            <img className="palomitas-tres" src="../../palomitasTres.png" alt="" />
             <h2>En cartelera</h2>
             <div className="billboard-content">
                 <div className="first-row">
@@ -27,7 +29,7 @@ const Billboard = ({data}) => {
                                 <h3>{el.name.length <= 15 ? el.name : el.name.slice(0,12) + '...'}</h3><span>{el.lenguage}</span>
                             </div>
                             <img src={el.poster_img} alt={el.name} />
-                            <button>Comprar ticket</button>
+                            <Link to='/ticket'><button>Comprar ticket</button></Link>
                         </div>
                         ))
                     )}
@@ -40,7 +42,7 @@ const Billboard = ({data}) => {
                                     <h3>{el.name.length <= 15 ? el.name : el.name.slice(0,12) + '...'}</h3><span>{el.lenguage}</span>
                                 </div>
                                 <img src={el.poster_img} alt={el.name} />
-                                <button>Comprar ticket</button>
+                                <Link to='/ticket'><button>Comprar ticket</button></Link>
                             </div>
                             ))
                         )}
