@@ -372,6 +372,8 @@ header{
   height: 100vh;
   background-color: #282828;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .ticket-title{
@@ -393,44 +395,155 @@ header{
 }
 
 .ticket-form{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+}
+
+.ticket-form form{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .div-input{
   width: 448px;
   height: 77px;
+  position: relative;
+  margin-top: 37px;
 }
 
-.div-input select{
+.div-input strong{
+  position: absolute;
+  top: -60px;
+  left: 65px;
+  background-color: rgb(219, 56, 56);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+
+.div-input select, .div-input input{
   position: relative;
   background-color: transparent;
   color: white;
   font-size: 21px;
   font-weight: bold;
   width: 100%;
-  height: 80%;
   border: 2px solid #554F95;
   border-radius: 6px;
   appearance: none;
 }
 
+.div-input select, .div-input input{
+  position: relative;
+  padding: 19px 22px;
+  z-index: 3;
+}
 
-.div-input label{
+.div-input input{
+  width: 90%;
+}
+
+
+.div-input select:focus{
+  background-color: rgba(0, 0, 0, 0.518);
+  color: white;
+}
+
+.ticket-icon{
   position: absolute;
-  width: 33%;
-  top: -8px;
+  top: 17%;
+  right: 6%;
+  z-index: 1;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.label-uno{
+  position: absolute;
+  width: auto;
+  top: -9px;
   left: 15px;
   font-size: 14px;
   font-weight: bold;
   color: white;
   z-index: 999;
   padding-left: 10px;
+  padding-right: 20px;
   background-color: #282828;
-
 }
+
+.label-dos{
+  position: absolute;
+  width: auto;
+  top: -9px;
+  left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  z-index: 999;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #282828;
+}
+
+.label-tres{
+  position: absolute;
+  width: auto;
+  top: -9px;
+  left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  z-index: 999;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #282828;
+}
+
+.ticket-buttons{
+  width: 357px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-buttons button:first-of-type{
+  background-color: transparent;
+  border: 2px solid #554F95;
+  width: 237px;
+  height: 100%;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-right: 47px;
+}
+
+.ticket-buttons button:last-of-type{
+  font-size: 18px;
+  font-weight: normal;
+  color: #A9A9A9;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.ticket-buttons button:first-of-type:hover,.ticket-buttons button:last-of-type:hover{
+  opacity: .8;
+}
+
 
 
 
@@ -531,5 +644,43 @@ header{
   .pointers button > img {
     width: 60px;
     height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  .div-input{
+    width: 88%;
+    margin-top: 20px;
+  }
+
+  .ticket-form form{
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  .ticket-buttons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ticket-buttons button:first-of-type{
+    margin: 0;
+    width: 249px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+
+  .ticket-title{
+    padding: 80px 0 30px 22px;
+  }
+
+  .ticket-title h2{
+    margin-bottom: 15px;
   }
 }
